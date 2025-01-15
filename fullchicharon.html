@@ -1,34 +1,27 @@
-<!doctype html>
-<html lang="es">
 <head>
-<meta charset="utf-8">
-<title>VICTOR MANUEL ZAMBRAN</title>
-<link rel="shortcut icon" href="" type="image/x-icon">
-<link rel="icon" href="" type="image/x-icon">
-<style>
-    html, body {
-        margin:0;
-        padding:0;
-        width:100%;
-        height:100%;
-    }
-    .fs-vid-background {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: 2;
-    }
-    .fs-vid-background video {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
-    video {
-        max-width: 100%;
-    }
-</style>
+<meta charset="UTF-8">
+<title></title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<script src="https://radiopedregal.github.io/js/jquery-3.2.1.min.js"></script>
+<script src="https://radiopedregal.github.io/js/lunaradio.js"></script>
+</head>
+
+<body style="margin:0px">
+
+<div id="lunaradio" style='width:100%; height:100%;background-image: url("https://imgur.com/NOImItd.png"); background-repeat: no-repeat; background-size: cover; background-position: center;
+-webkit-border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border: none;'>
 <script>
 document.addEventListener('contextmenu', function(e) {
   e.preventDefault();
@@ -40,59 +33,54 @@ document.onkeydown = function(e) {
 };
 </script>
 </head>
-<body>
-<div class="fs-vid-background">
-<video autoplay="true" muted="true" loop="true">
-<source src="https://imgur.com/EXFnbbn.mp4" type="video/mp4">
-</video>
-</div>
-<script src="https://radiopedregal.github.io/js/jquery-3.2.1.min.js"></script> 
-<script src="https://radiopedregal.github.io/js/lunaradio.js"></script>
-<div id="k-popradio" style="width:100%; height: 100%; position: absolute; left:0; top:0; z-index: 300;">
-</div>
 
-<script>
-jQuery(document).ready(function($) {
-    $("#k-popradio").lunaradio({
-        userinterface: "big",
-        backgroundcolor: "rgba(9,15,25,0.8)",
-        fontcolor: "#FFFFFF",
-        hightlightcolor: "#06B703",
-        fontname: "Anton",
-        googlefont: "Anton&display=swap",
-        fontratio: "0.4",
-        radioname: "RADIO FULL CHICHA",
-        scroll: "true",
-        coverimage: "https://imgur.com/KapLGFP.png",
-        onlycoverimage: "true",
-        coverstyle: "animated",
-        usevisualizer: "real",
-        visualizertype: "8",
-        multicolorvisualizer: "true", 
-        color1: "#00FF00",
-        color2: "#ffff00",
-        color3: "#FF1F6F",
-        color4: "#FF1F6F",
-        metadatatechnic: "",
-        ownmetadataurl: "",
-        streamurl: "https://stream-173.zeno.fm/zwytkt2pgf9uv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ6d3l0a3QycGdmOXV2IiwiaG9zdCI6InN0cmVhbS0xNzMuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6Im9ibDFPWGNhU0pheWNnN2d0UzdQN1EiLCJpYXQiOjE3MzY5Nzc5MTMsImV4cCI6MTczNjk3Nzk3M30.AyIJHuhvydRxk2y-t08kEbZEowA9B0xZ1lGSc6f7xNI",
-        streamtype: "zeno", //soporta: zeno, icecast2, shoutcast2
+
+<script src="https://radiopedregal.github.io/js/jquery-3.2.1.min.js" type="3bc5e4e5245e387f3290c38f-text/javascript"></script>
+<script src="https://radiopedregal.github.io/js/lunaradio.js" type="3bc5e4e5245e387f3290c38f-text/javascript"></script>
+
+<div id="lunaradio" style="width:100%; height:550px;"></div>
+
+<script type="3bc5e4e5245e387f3290c38f-text/javascript">
+$("#lunaradio").lunaradio({
+	
+	userinterface: "big",
+	backgroundcolor: "rgba(9,15,25,0.8)",
+	fontcolor: "#ffffff",
+	hightlightcolor: "#fa225b",
+	fontname: "Anton",
+	googlefont: "Anton&display=swap",
+	fontratio: "0.4",                               
+	radioname: "RADIO FULL CHICHA",
+	scroll: "true",
+	coverimage: "https://imgur.com/btUnMHW.png",
+	usevisualizer: "real",
+	coverstyle: "animated", 
+	visualizertype: "2",
+	multicolorvisualizer: "true",
+    color1: "#00FF00",
+    color2: "#ffff00",
+    color3: "#FF1F6F",
+    color4: "#FF1F6F",
+	itunestoken: "1000lIPN",
+	metadatatechnic: "fallback", //fallback (usar para zeno)",
+	ownmetadataurl: "",
+	streamurl: "https://stream-173.zeno.fm/zwytkt2pgf9uv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ6d3l0a3QycGdmOXV2IiwiaG9zdCI6InN0cmVhbS0xNzMuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6Im9ibDFPWGNhU0pheWNnN2d0UzdQN1EiLCJpYXQiOjE3MzY5Nzc5MTMsImV4cCI6MTczNjk3Nzk3M30.AyIJHuhvydRxk2y-t08kEbZEowA9B0xZ1lGSc6f7xNI",
+	streamtype: "zeno", //soporta: zeno, icecast2, shoutcast2
         idzeno: "zwytkt2pgf9uv",
-        icecastmountpoint: "", 
-        shoutcastpath: "",
-        shoutcastid: "",
-        streamsuffix: "",
-        radionomyid: "",
-        radionomyapikey: "",
-        radiojarid: "",
-        radiocoid: "",
-        itunestoken: "1000lIPN",
-        metadatainterval: "9000",
-        volume: "100",
-        debug: "false",
-        autoplay: "true"
-    });
+	radionomyid: "",
+	radionomyapikey: "",
+	radiojarid: "",
+	radiocoid: "",
+	shoutcastpath: "/stream",
+	shoutcastid: "1",
+	streamsuffix: "",
+	metadatainterval: "20000",
+	volume: "85",
+	debug: "false",
+	usestreamcorsproxy: "false", 
+	corsproxy: "https://corsradio.herokuapp.com/index.php?q=",
+	autoplay:"true",
 });
-</script>
+</script>					
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="3bc5e4e5245e387f3290c38f-|49" defer=""></script>
 </body>
-</html>

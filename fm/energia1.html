@@ -249,41 +249,45 @@
 
   <!-- Reproductor -->
   <div id="player"></div>
-  <script>
-    $("#player").lunaradio({
-      userinterface: "big",
-      backgroundcolor: "rgba(9,15,25,0.8)",
-      fontcolor: "#ffffff",
-      hightlightcolor: "#000000",
-      fontname: "Saira Condensed",
-      googlefont: "Saira+Condensed:wght@100",
-      fontratio: "0.4",
-      radioname: "RADIO ENERGIA AREQUIPAa",
-      scroll: "true",
-      coverimage: "https://i.imgur.com/73N7Df1.png",
-      onlycoverimage: "false",
-      coverstyle: "animated",
-      usevisualizer: "real",
-      visualizertype: "2",
-      itunestoken: "1000lIPN",
-      metadatatechnic: "",
-ownmetadataurl: "",
-streamurl: "https://radios.yanapak.org/radioenergiaaqp", // o la URL de tu stream Icecast
-streamtype: "icecast",
-shoutcastid: "1",
-metadatainterval: "10000", // Icecast generalmente usa 10000
+<script>
+$("#player").lunaradio({
+userinterface: "big", 
+backgroundcolor: "rgba(9,15,25,0.8)",
+fontcolor: "#ffffff",
+hightlightcolor: "#000000", 
+fontname: "Saira Condensed", 
+googlefont: "Saira+Condensed:wght@100", 
+fontratio: "0.4", 
+radioname: "RADIO ENERGIA AREQUIPA", 
+scroll: "true", 
+coverimage: "https://i.imgur.com/73N7Df1.png",
+onlycoverimage: "false",
+coverstyle: "animated",
+usevisualizer: "real", 
+visualizertype: "2",              
+itunestoken: "1000lIPN", 
+metadatatechnic: "creativo-agencia-metadato",
+ownmetadataurl: "https://zenoplay.zenomedia.com/api/zenofm/nowplaying/permchai7spvv",
+streamurl: "https://radios.yanapak.org/radioenergiaaqp",
+streamtype: "icecast2", //soporta: zeno, icecast2, shoutcast2
+idzeno: "shwkz8cme0hvv",
+icecastmountpoint: "", 
+shoutcastpath: "",
+shoutcastid: "1", 
+metadatainterval: "26000", 
 volume: "100",
 debug: "false",
 autoplay: "true",
 displayliveicon: "true",
 visualizeropacity: "1.0",
 multicolorvisualizer: "true",
-      color1: "#00FF00",
-      color2: "#ffff00",
-      color3: "#FF1F6F",
-      color4: "#FF1F6F",
-    });
-  </script>
+color1: "#00FF00",
+color2: "#ffff00",
+color3: "#FF1F6F",
+color4: "#FF1F6F",
+});
+</script>
+
 
   <!-- Reloj script -->
   <script>
